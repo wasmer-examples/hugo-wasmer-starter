@@ -1,0 +1,10 @@
+[package]
+name = "wasmer-tests/wasmer-edge-hugo-sample"
+version = "0.1.0"
+description = "wasmer-tests/wasmer-edge-hugo-sample website"
+
+[dependencies]
+"wasmer/static-web-server" = "^1"
+
+[fs]
+public = "public"
