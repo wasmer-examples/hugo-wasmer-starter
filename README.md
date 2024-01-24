@@ -10,7 +10,7 @@ hugo server
 
 You will start a high-performance server that will watch your files.
 
-### Deploy Wasmer Edge
+## Deploy Wasmer Edge
 
 The easiest way to deploy your Hugo static site is to use the [Wasmer Edge](https://wasmer.io/products/edge).
 
