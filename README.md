@@ -1,43 +1,27 @@
-# HUGO Starter template for Wasmer Edge
-
-This is a template project for creating a HUGO based website that can be deployed to Wasmer Edge
+This is a [Hugo](https://gohugo.io/) project bootstrapped with `hugo new site project-name`.
 
 ## Usage
 
-### 1. Install the `wasmer` CLI
-
-```bash
-curl https://get.wasmer.io -sSfL | sh
-```
-
-### 2. Clone this repository
-
-```bash
-git clone https://github.com/wasmer-examples/hugo-wasmer-starter.git
-```
-
-### 3. Install the Hugo CLI
-
-```bash
-brew install hugo
-```
-
-### 4. Add your Hugo site
-
-Add your data to the `content` folder.
-
-### 5. Run the Hugo site
+You can run the Hugo site with:
 
 ```bash
 hugo server
 ```
 
-You will get the output from the Hugo site.
+You will start a high-performance server that will watch your files.
 
-### 6. Deploy the Hugo site
+### Deploy Wasmer Edge
+
+The easiest way to deploy your Hugo static site is to use the [Wasmer Edge](https://wasmer.io/products/edge).
+
+Live example: http://wasmer-edge-hugo-sample.wasmer.app/
+
+First, you'll need to run `hugo` to build the assets, and then, to deploy to Wasmer Edge:
 
 ```bash
 wasmer deploy
 ```
 
-> You will need to change the namespace in `wasmer.toml` to your own namespace and app name in `app.yaml` to your own app name.
+> [!NOTE]
+> You will need to have Wasmer installed (check out [the docs to install the Wasmer CLI](https://docs.wasmer.io/install)!). 
+> You will also need to change the namespace in `wasmer.toml` to your own namespace and app name in `app.yaml` to your own app name.
