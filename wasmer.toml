@@ -1,7 +1,9 @@
 [package]
-name = "wasmer-tests/wasmer-edge-hugo-sample"
-version = "0.1.0"
-description = "wasmer-tests/wasmer-edge-hugo-sample website"
+name = "wasmer-examples/hugo-wasmer-starter"
+version = "0.2.1"
+description = "Wasmer Hugo starter package"
+readme = "README.md"
+repository = "https://github.com/wasmer-examples/hugo-wasmer-starter"
 
 [dependencies]
 "wasmer/static-web-server" = "^1"
