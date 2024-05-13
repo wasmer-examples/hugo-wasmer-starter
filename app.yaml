@@ -1,4 +1,3 @@
 ---
 kind: wasmer.io/App.v0
-name: wasmer-edge-hugo-sample
-package: wasmer-examples/hugo-wasmer-starter
+package: .
