@@ -14,7 +14,7 @@ You can run the Hugo website using Wasmer (check out the [install guide](https:/
 
 ```bash
 hugo
-wasmer run . --net -- --port=1313
+wasmer run . -- --port=1313
 ```
 
 Open [http://localhost:1313](http://localhost:1313) with your browser to see the result.
