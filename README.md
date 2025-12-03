@@ -1,33 +1,28 @@
-This is a [Hugo](https://gohugo.io/) project bootstrapped with `hugo new site project-name`.
+# Hugo Static Site + Wasmer
 
-## Usage
+This example shows how to build a **Hugo** site and deploy the generated HTML to **Wasmer Edge**.
 
-You can run the Hugo site with:
+## Demo
+
+https://wasmer-edge-hugo-sample.wasmer.app/
+
+## How it Works
+
+* `hugo.toml` defines the site title, base URL, and theme (`ananke`).
+* Content lives under `content/`; run `hugo new` to add more pages or posts.
+* The bundled `themes/ananke` theme provides layouts and styling.
+* `hugo` builds everything into the `public/` directory—exactly what Wasmer Edge serves.
+
+## Running Locally
 
 ```bash
 hugo server
 ```
 
-This will start a high-performance server that will watch your files.
+The development server watches your files and serves the site at `http://127.0.0.1:1313/` with live reload.
 
-You can run the Hugo website using Wasmer (check out the [install guide](https://docs.wasmer.io/install)):
+## Deploying to Wasmer (Overview)
 
-```bash
-hugo
-wasmer run . -- --port=1313
-```
-
-Open [http://localhost:1313](http://localhost:1313) with your browser to see the result.
-
-
-## Deploy Wasmer Edge
-
-The easiest way to deploy your Hugo static site is to use the [Wasmer Edge](https://wasmer.io/products/edge).
-
-Live example: https://wasmer-edge-hugo-sample.wasmer.app/
-
-First, you'll need to run `hugo` to build the assets, and then, to deploy to Wasmer Edge:
-
-```bash
-wasmer deploy
-```
+1. Generate the static site: `hugo` (outputs to `public/`).
+2. Configure Wasmer Edge to publish the `public/` directory.
+3. Deploy and open `https://<your-subdomain>.wasmer.app/` to view the site.
